@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<title>Lego Star Wars Movie Posters</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+</head>
+<body>
+
+	<div class="container">
+		<div class="row"><br></div>
+			
+		
+		<div class="row">
+			<div class="col-md-12 col-xs-12">
+				<h2 class="text-center">Lego Star Wars: Todas Las Peliculas</h2>				
+			</div>
+		</div>
+		<!-- CAROUSEL BLOCK -->
+		<div class="row">
+			<div class="col-md-4 col-md-offset-3 col-xs-10 col-xs-offset-1">
+				<div id="carousel-example" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel-example" data-slide-to="1"></li>
+						<li data-target="#carousel-example" data-slide-to="2"></li>
+						<li data-target="#carousel-example" data-slide-to="3"></li>
+						<li data-target="#carousel-example" data-slide-to="4"></li>
+						<li data-target="#carousel-example" data-slide-to="5"></li>
+					</ol>
+
+					<!-- LIST IMAGES BLOCK STARTS -->
+					<div class="carousel-inner" role="listbox">
+						<div class="item">
+							<img src="img/legostarwars/starwars_I.jpg" alt="he Phantom Menace">
+							<div class="carousel-caption">
+								<h8 class="text-muted">The Phantom Menace</h8>
+							</div>
+						</div>
+						
+						<div class="item">
+							<img src="img/legostarwars/starwars_II.jpg" alt="Attack of The Clones">
+							<div class="carousel-caption">
+								<h8 class="text-muted">Attack of The Clones</h8>
+							</div>
+						</div>
+
+						<div class="item">
+							<img src="img/legostarwars/starwars_III.jpg" alt="Revange of The Sith">
+							<div class="carousel-caption">
+								<h8 class="text-muted">Revange of The Sith</h8>
+							</div>
+						</div>
+
+						<div class="item active">
+							<img src="img/legostarwars/starwars_IV.jpg" alt="A New Hope">
+							<div class="carousel-caption">
+								<h8 class="text-muted">A New Hope</h8>
+							</div>
+						</div>
+
+						<div class="item">
+							<img src="img/legostarwars/starwars_V.jpg" alt="The Empire Strikes Back">
+							<div class="carousel-caption">
+								<h8 class="text-muted">The Empire Strikes Back</h8>
+							</div>
+						</div>
+
+						<div class="item">
+							<img src="img/legostarwars/starwars_VI.jpg" alt="Return of The Jedi">
+							<div class="carousel-caption">
+								<h8 class="text-muted">Return of The Jedi</h8>
+							</div>
+						</div>
+
+
+					</div>
+					<!-- LIST IMAGES BLOCK ENDS -->
+				</div>
+				
+				<!-- CONTROLS BLOCK STARTS -->
+				<!-- Left and right controls -->
+				<a class="left carousel-control" href="#carousel-example" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previo</span>
+				</a>
+				<a class="right carousel-control" href="#carousel-example" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Siguiente</span>
+				</a>
+				<!-- CONTROLS BLOCK ENDS -->
+
+			</div>
+
+			<div class="col-md-2 col-xs-12 hidden-xs hidden-sm pull-down">
+				<p class="text-right"><em>
+					<strong>Con Cariño para mis Sobrinos: <br> Naomi, Aimee y Joshua.</strong>
+				</em></p>
+				<p class="text-right">
+					<em> - Seiji</em>
+				</p>
+			</div>	
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12 visible-xs visible-sm">
+				<p class="text-right"><small><em>Con Cariño para mis Sobrinos: <br>Naomi, Aimee y Joshua. <br>--Seiji </em></small></p>
+			</div>
+		</div>
+	
+	</div>
+</body>
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script>
+$(document).ready(function(){
+    $('.pull-down').each(function() {
+		$(this).css('margin-top', $(this).parent().height()-$(this).height())
+	});
+});
+</script>
+
+</html>
